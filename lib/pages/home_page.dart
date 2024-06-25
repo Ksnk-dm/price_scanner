@@ -24,7 +24,12 @@ class HomePage extends StatelessWidget {
         title: Text('Price scanner'),
         centerTitle: true,
       ),
-      body: HorizontalList(),
+      body: Column(
+        children: [
+          HorizontalList(title: 'Популярні'),
+          HorizontalList(title: 'Історія',)
+        ],
+      ),
       bottomNavigationBar: BottomBar(),
     );
   }
